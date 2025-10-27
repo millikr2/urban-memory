@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
-import { Menu, Download, ArrowLeftRight, Receipt, HelpCircle, GitBranch, Layout, FileBox } from "lucide-react";
+import { Menu, Download, ArrowLeftRight, Receipt, HelpCircle } from "lucide-react";
 
 const bankingFeatures = [
   {

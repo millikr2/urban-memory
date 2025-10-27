@@ -11,7 +11,7 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentPage, setCurrentPage] = useState("home");
 
-  const handleLogin = (userType: 'demo' | 'new') => {
+  const handleLogin = () => {
     setIsLoggedIn(true);
     setCurrentPage("home");
   };
