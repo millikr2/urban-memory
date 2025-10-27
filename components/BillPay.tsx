@@ -67,6 +67,7 @@ interface ScheduledPayment {
   startDate: Date;
   frequency: "one-time" | "weekly" | "bi-weekly" | "monthly" | "quarterly" | "annually";
   endDate?: Date;
+  endType?: "never" | "date" | "occurrences";
   occurrences?: number;
   memo: string;
   status: "active" | "paused" | "completed";

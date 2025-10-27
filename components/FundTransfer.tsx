@@ -376,16 +376,16 @@ export function FundTransfer() {
                   </Alert>
                 )}
 
-                <Button 
-                  type="submit" 
-                  className="w-full" 
+                <Button
+                  type="submit"
+                  className="w-full"
                   disabled={
-                    isTransferring || 
-                    !fromAccount || 
-                    !toAccount || 
-                    !amount || 
+                    isTransferring ||
+                    !fromAccount ||
+                    !toAccount ||
+                    !amount ||
                     fromAccount === toAccount ||
-                    (amount && fromAccount && parseFloat(amount) > getAccountBalance(fromAccount))
+                    !!(amount && fromAccount && parseFloat(amount) > getAccountBalance(fromAccount))
                   }
                 >
                   {isTransferring ? "Processing Transfer..." : "Transfer Funds"}
@@ -537,15 +537,15 @@ export function FundTransfer() {
                   </Alert>
                 )}
 
-                <Button 
-                  type="submit" 
-                  className="w-full" 
+                <Button
+                  type="submit"
+                  className="w-full"
                   disabled={
-                    isTransferring || 
-                    !fromAccount || 
-                    !selectedRecipient || 
+                    isTransferring ||
+                    !fromAccount ||
+                    !selectedRecipient ||
                     !amount ||
-                    (amount && fromAccount && parseFloat(amount) > getAccountBalance(fromAccount))
+                    !!(amount && fromAccount && parseFloat(amount) > getAccountBalance(fromAccount))
                   }
                 >
                   {isTransferring ? "Processing Transfer..." : "Send Money"}

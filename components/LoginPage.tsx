@@ -4,8 +4,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import { AlertCircle, Eye, EyeOff, Building2 } from "lucide-react";
-import { Alert, AlertDescription } from "./ui/alert";
+import { Eye, EyeOff, Building2 } from "lucide-react";
 
 interface LoginPageProps {
   onLogin: (userType: 'demo' | 'new') => void;
